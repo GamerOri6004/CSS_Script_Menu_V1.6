@@ -7,7 +7,6 @@ local Window = Library.CreateLib("Classic Sonic Simulator Menu V1.7","RJTheme7")
 local Tab = Window:NewTab("Exploit on Menu")
 local Tab = Window:NewTab("Exploit on Game")
 local Section = Tab:NewSection("Beat Now! (Fixed Glitch 2 Screens)")
-Section:NewButton("Beat Zone Now!", "Click This! And Beat Zone!", function()
 local A_1 = 
 {
 	["Cmd"] = "Cleared", 
@@ -22,6 +21,7 @@ local A_1 =
 }
 }
 local Event = game:GetService("ReplicatedStorage").Remotes.EndGame
+Section:NewButton("Beat Zone Now!", "Click This! And Beat Zone!", function()
 Event:InvokeServer(A_1)
 game:GetService("Players").LocalPlayer.PlayerGui.Game:Destroy()
 end)
