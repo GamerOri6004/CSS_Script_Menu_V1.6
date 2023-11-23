@@ -4,7 +4,116 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 local Background = Color3.fromRGB(15,15,15)
 local Window = Library.CreateLib("Classic Sonic Simulator Menu V1.7","RJTheme7")
-local Tab = Window:NewTab("MENU")
+local Tab = Window:NewTab("Exploit on Menu")
+local Tab = Window:NewTab("Exploit on Game")
+local Section = Tab:NewSection("Get Zones in Custom Levels")
+Section:NewDropdown("Build Old Test", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 1
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build Green Hill", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 2
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build Marble", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 3
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build Labyrinth", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 4
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build Emerald Hill", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 5
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build Metropolis", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 6
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build Spring Yard", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 7
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build Star Light", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 8
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+Section:NewDropdown("Build New Test", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
+    local A_1 = 9
+    local A_2 = currentOption
+    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+    Event:FireServer(A_1, A_2)
+    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+    end)
+local A_1 = 
+{
+	["Cmd"] = "Cleared", 
+	["Replay"] = 
+{
+	[1] = 
+{
+	[1] = "walking", 
+	[2] = 76, 
+	[3] = 652
+}
+}
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.EndGame
+local Tab = Window:NewTab("Manage Your Levels")
+local Section = Tab:NewSection("Beat Now! (Fixed Glitch 2 Screens)")
+Section:NewButton("Beat Zone Now!", "Click This! And Beat Zone!", function()
+Event:InvokeServer(A_1)
+game:GetService("Players").LocalPlayer.PlayerGui.Game:Destroy()
+end)
+Section:NewButton("Exploit on Level Create", "Click This! And Beat Special Stage!", function()
+local A_1 = true
+local A_2 = 64
+local Event = game:GetService("ReplicatedStorage").Remotes.LeaveStage
+Event:FireServer(A_1, A_2)
+local A_1 = "Stages3"
+local Event = game:GetService("ReplicatedStorage").Remotes.GetPublishedCreations
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+Event:InvokeServer()
+game:GetService("Players").LocalPlayer.PlayerGui.S3SpecialStage:Destroy()
+end)
+Section:NewButton("Crash Game!", "Click This! And Crash Game!", function()
+game:GetService("Players").LocalPlayer:Destroy()
+end)
+Section:NewSlider("Set Act In Ur LvL", "Setting Act In Your Level", 6, 0, function(s)
+game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.Windows.Settings.Frame.Holder.ActNum.TextBox.Text = s
+end)
+local Section = Tab:NewSection("Fix Not Opening Zone!!!")
+Section:NewButton("FIX!!!", "", function()
+game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings:InvokeServer()
+game:GetService("Players").LocalPlayer.PlayerGui.Game:Destroy()
+end)
+local Tab = Window:NewTab("Exploit for Level Select")
 local Section = Tab:NewSection("Load ALL ZONE ON MENU OR ERROR")
 Section:NewButton("Virtual Reality Zone Act 1", "ButtonInfo", function()
 local A_1 = 
@@ -448,115 +557,6 @@ local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
 Event:InvokeServer()
 game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
 end)
-local Tab = Window:NewTab("GAME")
-local Section = Tab:NewSection("Get Zones in Custom Levels")
-Section:NewDropdown("Build Old Test", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 1
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build Green Hill", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 2
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build Marble", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 3
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build Labyrinth", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 4
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build Emerald Hill", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 5
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build Metropolis", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 6
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build Spring Yard", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 7
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build Star Light", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 8
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-Section:NewDropdown("Build New Test", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
-    local A_1 = 9
-    local A_2 = currentOption
-    local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
-    Event:FireServer(A_1, A_2)
-    game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
-    end)
-local A_1 = 
-{
-	["Cmd"] = "Cleared", 
-	["Replay"] = 
-{
-	[1] = 
-{
-	[1] = "walking", 
-	[2] = 76, 
-	[3] = 652
-}
-}
-}
-local Event = game:GetService("ReplicatedStorage").Remotes.EndGame
-local Tab = Window:NewTab("Beat in One Second")
-local Section = Tab:NewSection("Beat Now! (Fixed Glitch 2 Screens)")
-Section:NewButton("Beat Zone Now!", "Click This! And Beat Zone!", function()
-Event:InvokeServer(A_1)
-game:GetService("Players").LocalPlayer.PlayerGui.Game:Destroy()
-end)
-Section:NewButton("Beat Special Stage Now!", "Click This! And Beat Special Stage!", function()
-local A_1 = true
-local A_2 = 64
-local Event = game:GetService("ReplicatedStorage").Remotes.LeaveStage
-Event:FireServer(A_1, A_2)
-local A_1 = "Stages3"
-local Event = game:GetService("ReplicatedStorage").Remotes.GetPublishedCreations
-Event:InvokeServer(A_1)
-local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
-Event:InvokeServer()
-game:GetService("Players").LocalPlayer.PlayerGui.S3SpecialStage:Destroy()
-end)
-Section:NewButton("Crash Game!", "Click This! And Crash Game!", function()
-game:GetService("Players").LocalPlayer:Destroy()
-end)
-Section:NewSlider("Set Act In Ur LvL", "Setting Act In Your Level", 6, 0, function(s)
-game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.Windows.Settings.Frame.Holder.ActNum.TextBox.Text = s
-end)
-local Section = Tab:NewSection("Fix Not Opening Zone!!!")
-Section:NewButton("FIX!!!", "", function()
-game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings:InvokeServer()
-game:GetService("Players").LocalPlayer.PlayerGui.Game:Destroy()
-end)
-local Tab = Window:NewTab("Ring On Your Object")
 local Section = Tab:NewSection("House Objects")
 Section:NewButton("Restore Big Bookshelf", "Click This! And Replace Ring on Bookshelf big!", function()
 Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
