@@ -3,8 +3,8 @@
 ]]
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 local Background = Color3.fromRGB(15,15,15)
-local Window = Library.CreateLib("Classic Sonic Simulator Menu V1.6.0","RJTheme7")
-local Tab = Window:NewTab("Unused Zones (Fixed)")
+local Window = Library.CreateLib("Classic Sonic Simulator Menu V1.7","RJTheme7")
+local Tab = Window:NewTab("MENU")
 local Section = Tab:NewSection("Load ALL ZONE ON MENU OR ERROR")
 Section:NewButton("Virtual Reality Zone Act 1", "ButtonInfo", function()
 local A_1 = 
@@ -448,7 +448,7 @@ local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
 Event:InvokeServer()
 game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
 end)
-local Tab = Window:NewTab("Build Zones")
+local Tab = Window:NewTab("GAME")
 local Section = Tab:NewSection("Get Zones in Custom Levels")
 Section:NewDropdown("Build Old Test", "Click here and get metropolis", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}, function(currentOption)
     local A_1 = 1
