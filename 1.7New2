@@ -2,7 +2,7 @@
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
-local Background = Color3.fromRGB(15,15,15)
+local Background = Color3.fromRGB(15,100,15)
 local Window = Library.CreateLib("Classic Sonic Simulator Menu V1.7","RJTheme7")
 local Tab = Window:NewTab("Exploit on Menu")
 local Tab = Window:NewTab("Exploit on Game")
