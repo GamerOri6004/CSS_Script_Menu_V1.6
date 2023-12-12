@@ -1,0 +1,31 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("Anti-bot system", "RJTheme4")
+
+-- Секция
+local Tab = Window:NewTab("This easy")
+
+-- Подсекция
+local Section = Tab:NewSection("Anti-bot system")
+
+local JustFun = "Put code here! And wait 1 second"
+
+Section:NewButton("Copy link for code", "ButtonInfo", function()
+	local Babo = "https://raw.githubusercontent.com/GamerOri6004/CSS_Script_Menu_V1.6/main/CodeSite"
+	setclipboard(tostring(Babo))
+end)
+
+Section:NewTextBox(JustFun, "TextboxInfo", function(txt)
+	print(txt)
+	if txt == "7s48wg84ghf3why45f6g54e87j" then
+		wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerOri6004/CSS_Script_Menu_V1.6/main/BetaCSSMenuV2.0"))()
+		script:Destroy()
+	else
+		wait(1)
+		JustFun = "Put code here!"
+	end
+end)
+
+-- Заголовок
+Section:NewLabel("LabelText")
