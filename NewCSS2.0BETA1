@@ -1,0 +1,536 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Classic Sonic Simulator V12 Script V2.0 BETA 1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local SlotID = 1
+local LevelCreateID = 1
+local BeatLevelInst = 
+	{
+		["Cmd"] = "Cleared", 
+		["Replay"] = 
+		{
+			[1] = 
+			{
+				[1] = "walking", 
+				[2] = 76, 
+				[3] = 652
+			}
+		}
+	}
+local Tab = Window:MakeTab({
+	Name = "Menu",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "Welcome to CSS Script V2.0!",
+	Content = "With this script, you can become a developer character and build a metropolis and much more!",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+Tab:AddParagraph("How to correct teleport to unused zones","Use this functions only on Main Menu!")
+Tab:AddButton({
+	Name = "Teleport In Virtual Reality Zone Act 1!",
+	Callback = function()
+		local A_1 = 
+			{
+				[1] = "Virtual Reality", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 3, 
+				[5] = "Virtual Reality"
+			}
+		local A_2 = 2
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Virtual Reality Zone Act 2!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Virtual Reality", 
+				[2] = 2, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Virtual Reality"
+			}
+		local A_2 = 2
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Chemical Plant Zone!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Chemical Plant", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Chemical Plant"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Aquatic Ruin Zone!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Aquatic Ruin", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Aquatic Ruin"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Black Zone (???? Zone)!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "????", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "????"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("ReplicatedStorage").Objects.Asteron_Bullets.Name = "Asterrn"
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Sandopolis Zone!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Sandopolis", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Sandopolis"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Metropolis Zone!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Metropolis", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Metropolis"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Hydrocity Zone!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Hydrocity", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Hydrocity"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Ice Cap Zone!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Ice Cap", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Ice Cap"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Old Test Zone Act 1!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Test", 
+				[2] = 1, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 2, 
+				[5] = "Test"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+Tab:AddButton({
+	Name = "Teleport In Old Test Zone Act 2!",
+	Callback = function()
+		game.ReplicatedStorage.LevelSelect.Backdrop.Screen["Level Select Script"].warp:Play()
+		local A_1 = 
+			{
+				[1] = "Test", 
+				[2] = 2, 
+				[3] = 
+				{
+					[1] = 628, 
+					[2] = 462
+				}, 
+				[4] = 3, 
+				[5] = "Test"
+			}
+		local A_2 = 3
+		local Event = game:GetService("ReplicatedStorage").Remotes.LoadGame
+		Event:FireServer(A_1, A_2)
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetPlayerSettings
+		Event:InvokeServer()
+		local Event = game:GetService("ReplicatedStorage").Remotes.GetMasterData
+		Event:InvokeServer()
+		game:GetService("Players").LocalPlayer.PlayerGui.MainMenu:Destroy()
+	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Tab = Window:MakeTab({
+	Name = "Manage My Levels",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddDropdown({
+	Name = "Select slot your level",
+	Default = "1",
+	Options = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"},
+	Callback = function(SlotLevelID)
+		SlotID = SlotLevelID
+		print(SlotLevelID)
+	end    
+})
+Tab:AddParagraph("What is ID Levels i should select?","1 - Old Test, 2 - Idk, 3 - Idk, 4 - Idk, 5 - Emerald Hill, 6 - Metropolis, 7 - Idk, 8 - Idk, 9 - New Test")
+Tab:AddDropdown({
+	Name = "Select ID Level",
+	Default = "1",
+	Options = {"1", "2", "3", "4", "5", "6", "7", "8", "9"},
+	Callback = function(LevelID)
+		LevelCreateID = LevelID
+		print(LevelID)
+	end    
+})
+Tab:AddButton({
+	Name = "Create Level!",
+	Callback = function()
+		local Event = game:GetService("ReplicatedStorage").Remotes.CreateNewLevel
+		Event:FireServer(tonumber(LevelCreateID), tonumber(SlotID))
+		print(LevelCreateID)
+		print(SlotID)
+		wait(2)
+		game:GetService("Players").LocalPlayer.PlayerGui.ManageLevels:Destroy()
+	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Level Creator",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddLabel("Settings")
+Tab:AddToggle({
+	Name = "Set Act In Your Level!",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+Tab:AddLabel("Unused objects")
+Tab:AddParagraph("How to use unused objects","First, click on the button on which you want to insert the object, then, pull the ring out of the object list, put it on, then click on the button in the game (Save & Exit) then select the level at which you put the ring, and it will become the object you clicked on")
+Tab:AddButton({
+	Name = "Insert Big Bookshelf!",
+	Callback = function()
+		Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 224
+	end    
+})
+Tab:AddButton({
+	Name = "Insert Big Angel Island Breakable Rock!",
+	Callback = function()
+		Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 145
+	end    
+})
+Tab:AddButton({
+	Name = "Insert Conveyor Belt From Old Test!",
+	Callback = function()
+		Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+		game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 142
+	end    
+})
+local Tab = Window:MakeTab({
+	Name = "OP Functions",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddLabel("Instant Beating Any Zone")
+Tab:AddButton({
+	Name = "Beat Zone Now in One Click!",
+	Callback = function()
+		local Event = game:GetService("ReplicatedStorage").Remotes.EndGame
+		Event:InvokeServer(BeatLevelInst)
+		game:GetService("Players").LocalPlayer.PlayerGui.Game:Destroy()
+	end    
+})
+Tab:AddLabel("To be a character")
+Tab:AddParagraph("How to be a admin Character","To do this, just click on any button and go to ANY level. And you will become the character you clicked on now")
+Tab:AddButton({
+	Name = "To be Baldi",
+	Callback = function()
+		game.ReplicatedStorage.Players:WaitForChild(game.Players.LocalPlayer.Name):WaitForChild("Character")
+		game.ReplicatedStorage.Players[game.Players.LocalPlayer.Name].Character.Value = "Baldi"
+	end    
+})
+Tab:AddButton({
+	Name = "To be Sonic EXE",
+	Callback = function()
+		game.ReplicatedStorage.Players:WaitForChild(game.Players.LocalPlayer.Name):WaitForChild("Character")
+		game.ReplicatedStorage.Players[game.Players.LocalPlayer.Name].Character.Value = "Sonic_EXE"
+	end    
+})
+Tab:AddButton({
+	Name = "To be Orange Mushroom",
+	Callback = function()
+		game.ReplicatedStorage.Players:WaitForChild(game.Players.LocalPlayer.Name):WaitForChild("Character")
+		game.ReplicatedStorage.Players[game.Players.LocalPlayer.Name].Character.Value = "Mushroom_Orange"
+	end    
+})
+Tab:AddButton({
+	Name = "To be tiny sonic",
+	Callback = function()
+		game.ReplicatedStorage.Players:WaitForChild(game.Players.LocalPlayer.Name):WaitForChild("Character")
+		game.ReplicatedStorage.Players[game.Players.LocalPlayer.Name].Character.Value = "Sonic_Tiny"
+	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Creators",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddParagraph("Scripters","Tema_Suhar and Kirill228")
+Tab:AddParagraph("Name this UI Script","Orion Hub")
+local Tab = Window:MakeTab({
+	Name = "All local scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Open Dark Dex V3 Secure Bypass",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+	end    
+})
+Tab:AddButton({
+	Name = "Open Remote Spy",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/bCghX33W", true))()
+	end    
+})
+Tab:AddButton({
+	Name = "Open Simple Spy",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+	end    
+})
+-- ColorPicker:Set(Color3.fromRGB(255,255,255))
+
+--Slider:Set(2)
+--Tab:AddLabel("Label")
+--CoolLabel:Set("Label New!")
+--Tab:AddParagraph("Paragraph","Paragraph Content")
+-- CoolParagraph:Set("Paragraph New!")
+
+-- Bind:Set(Enum.KeyCode.E)
+-- Dropdown:Refresh(List<table>,true)
+--Dropdown:Set("dropdown option")
+OrionLib:Init()
+-- destroying the interface: OrionLib:Destroy()
+-- Coming Soon:
+--Tab:AddColorpicker({
+--	Name = "Colorpicker",
+--	Default = Color3.fromRGB(255, 0, 0),
+--	Callback = function(Value)
+--		print(Value)
+--	end	  
+--})
+-- Toggle is soon --
+--Tab:AddToggle({
+--	Name = "This is a toggle!",
+--	Default = false,
+--	Callback = function(Value)
+--		print(Value)
+--	end    
+--})
+--Tab:AddSlider({
+--	Name = "Slider",
+--	Min = 0,
+--	Max = 20,
+--	Default = 5,
+--	Color = Color3.fromRGB(255,255,255),
+--	Increment = 1,
+--	ValueName = "bananas",
+--	Callback = function(Value)
+--		print(Value)
+--	end    
+--})
+--Tab:AddTextbox({
+--	Name = "Textbox",
+--	Default = "default box input",
+--	TextDisappear = true,
+--	Callback = function(Value)
+--		print(Value)
+--	end	  
+--})
+--Tab:AddDropdown({
+--	Name = "Dropdown",
+--	Default = "1",
+--	Options = {"1", "2"},
+--	Callback = function(Value)
+--		print(Value)
+--	end    
+--})
+--Tab:AddBind({
+--	Name = "Bind",
+--	Default = Enum.KeyCode.E,
+--	Hold = false,
+--	Callback = function()
+--		print("press")
+--	end    
+--})
